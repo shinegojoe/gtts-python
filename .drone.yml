@@ -4,8 +4,9 @@ type: docker
 
 steps:
   - name: gtts
-    image: python:latest
+    image: python:3.7
     # image: node:12.22.1-alpine
     commands:
       - pwd
+      - ls
 
