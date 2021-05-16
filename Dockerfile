@@ -4,8 +4,8 @@ FROM ubuntu:18.04
 WORKDIR /app
 
 # Install any needed packages specified in requirements.txt
-COPY src/main.py ./src/main.py
-COPY .env ./
+# COPY src/main.py ./src/main.py
+# COPY .env ./
 
 RUN apt update
 RUN apt install curl -y

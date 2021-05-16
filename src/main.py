@@ -14,7 +14,7 @@ app = Flask(__name__)
 def ggts():
     try:
         data = request.json
-        print(data)
+        print(data, 'v4')
         text = data['text']
         language = 'en'
         myobj = gTTS(text=text, lang=language, slow=False) 

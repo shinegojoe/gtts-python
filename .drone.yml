@@ -3,10 +3,13 @@ name: i18n CI
 type: docker
 
 steps:
-  - name: gtts
+  - name: gtts-deploy
     image: python:3.7
     # image: node:12.22.1-alpine
     commands:
+      - pip install requests
       - pwd
-      - ls
+      - tar -zcvf src.tar.gz src
+      - python3 deploy.py
+
 

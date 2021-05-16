@@ -1,0 +1,1 @@
+sudo docker run --name gtts -ti -d -p 7001:7001 -v /home/taka/project/deploy/gtts:/app/storage gtts:v2  /bin/bash 
