@@ -9,6 +9,7 @@ steps:
     commands:
       - pip install requests
       - pip install python-dotenv
+      - pip install translate
       - pwd
       - tar -zcvf src.tar.gz src
       - python3 deploy.py
