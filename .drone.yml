@@ -7,8 +7,8 @@ steps:
     image: python:3.7
     # image: node:12.22.1-alpine
     commands:
-      # - pip install requests
-      # - pip install python-dotenv
+      - pip install requests
+      - pip install python-dotenv
       # - pip install translate
       # - pip install flask
       # install the dependency above in the deploy environment
